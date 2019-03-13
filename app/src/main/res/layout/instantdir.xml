@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/can"
+        android:layout_width="125dp"
+        android:layout_height="110dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:padding="19dp"
+        app:srcCompat="@drawable/cante" />
+
+    <ImageView
+        android:id="@+id/wash"
+        android:layout_width="125dp"
+        android:layout_height="98dp"
+        android:layout_alignBottom="@+id/can"
+        android:layout_centerHorizontal="true"
+        android:padding="19dp"
+        app:srcCompat="@drawable/waa" />
+
+    <ImageView
+        android:id="@+id/exit"
+        android:layout_width="125dp"
+        android:layout_height="122dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:padding="19dp"
+        app:srcCompat="@drawable/exit" />
+</RelativeLayout>

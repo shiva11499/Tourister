@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "36261310404",
+    "firebase_url": "https://touristant-8fab5.firebaseio.com",
+    "project_id": "touristant-8fab5",
+    "storage_bucket": "touristant-8fab5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:36261310404:android:017bc69ed6b31bf1",
+        "android_client_info": {
+          "package_name": "com.example.android.touristant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "36261310404-065ruclkauji47oigs48lor0e0h10hnp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDzxODvu-I816Y0ShGyG-bnJga16sMVpg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
