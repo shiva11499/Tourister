@@ -67,8 +67,6 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
          database = FirebaseDatabase.getInstance();
 
-
-
         SharedPreferences prefs = getSharedPreferences("no",MODE_PRIVATE);
         String restoredText = prefs.getString("no", null);
 if (restoredText==null) {
@@ -82,34 +80,23 @@ if (restoredText==null) {
     // disallow cancel of AlertDialog on click of back button and outside touch
     alert.setTitle("Enter no ");
     alert.setIcon(R.drawable.ic_arrow_forward_black_24dp);
-
-
     alert.setPositiveButton("Okay", new DialogInterface.OnClickListener() {
-
 
         @Override
         public void onClick(DialogInterface dialog, int which) {
-
             SharedPreferences.Editor editor = getSharedPreferences("no", MODE_PRIVATE).edit();
             editor.putString("no", editText.getText().toString());
             scanWifiList();
-
-
             editor.apply();
-
-
         }
     });
+    
     AlertDialog dialog = alert.create();
     dialog.show();
-
-
 }
-
 else
 {
     scanWifiList();
-
 }
 
 
