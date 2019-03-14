@@ -152,8 +152,6 @@ else
 
 go();
 
-
-
                 return false;
             }
         });
@@ -177,11 +175,6 @@ void go()
     dialog.show();
 
 }
-
-
-
-
-
 
     private void scanWifiList1() {
         WifiManager wifiManager = (WifiManager) getApplicationContext().getSystemService(getApplicationContext().WIFI_SERVICE);
@@ -211,17 +204,12 @@ void go()
                     // Write a message to the database
                     if (restoredText != null) {
                         myRef = database.getReference(restoredText);
-
                         myRef.setValue(rss);
-
                     }
-
 
                     myRef = database.getReference("2");
                     myRef1 = database.getReference("1");
-
                     myRef.addValueEventListener(new ValueEventListener() {
-
 
                         @Override
                         public void onDataChange(DataSnapshot dataSnapshot) {
