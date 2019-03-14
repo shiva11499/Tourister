@@ -127,9 +127,6 @@ else
         play.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-
-
                 if (playpause == 0) {
                     playpause = 1;
                     play.setImageResource(R.drawable.ic_pause_black_24dp);
@@ -140,19 +137,15 @@ else
                     sound=MediaPlayer.create(getApplicationContext(), R.raw.subsite1);
                     //    sound.release();
                     play.setImageResource(R.drawable.ic_play_circle_filled_black_24dp);
-
                 }
-
             }
         });
 
         play.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View view) {
-
-go();
-
-                return false;
+            go();
+            return false;
             }
         });
     }
@@ -180,7 +173,6 @@ void go()
         WifiManager wifiManager = (WifiManager) getApplicationContext().getSystemService(getApplicationContext().WIFI_SERVICE);
         if (wifiManager.isWifiEnabled()) {
             final WifiInfo wifiInfo = wifiManager.getConnectionInfo();
-
 
             new Handler().postDelayed(new Runnable() {
 
