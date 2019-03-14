@@ -98,12 +98,8 @@ else
 {
     scanWifiList();
 }
-
-
-
-
+        
         start();
-
 
         mSensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
         compass_img = (ImageView) findViewById(R.id.img_compass);
