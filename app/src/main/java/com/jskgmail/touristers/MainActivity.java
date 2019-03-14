@@ -221,12 +221,8 @@ void go()
                         }
                     });
 
-
                     // close this activity
-
-
                     myRef1.addValueEventListener(new ValueEventListener() {
-
 
                         @Override
                         public void onDataChange(DataSnapshot dataSnapshot) {
@@ -236,7 +232,6 @@ void go()
                             Log.d("mmmm", "Value is: " + value);
                             value2 = value;
                             //trilateration(new int[]{10, 20, 30}, new int[]{rss, value1, value2});
-
                         }
 
                         @Override
@@ -245,22 +240,10 @@ void go()
                             Log.w("mmmmmmmmm", "Failed to read value.", error.toException());
                         }
                     });
-
-
                     // close this activity
                 }
-
-
             }, 2000);
         }
-
-
-
-
-
-
-
-
 }
 
 
@@ -568,35 +551,4 @@ cc=1;
 //            #print 'No Real intersection'
 //            #return 0
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
-
