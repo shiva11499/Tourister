@@ -286,60 +286,8 @@ cc=1;
         }
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    //sensors
+    
     @Override
     public void onSensorChanged(SensorEvent event) {
         if (event.sensor.getType() == Sensor.TYPE_ROTATION_VECTOR) {
@@ -386,12 +334,10 @@ cc=1;
         txt_compass.setText(mAzimuth + "° " + where);
         if(mAzimuth <350 && mAzimuth > 280 ) {
         }
-
     }
 
     @Override
     public void onAccuracyChanged(Sensor sensor, int i) {
-
     }
 
     public void start() {
@@ -446,15 +392,6 @@ cc=1;
         start();
     }
 
-
-
-
-
-
-
-
-
-
     int x, y;
     int x1, x2, x3, y1, y2, y3 = 0;
 
@@ -485,14 +422,8 @@ cc=1;
         int x = (C * E - F * B) / (E * A - B * D);
         int y = (C * D - A * F) / (B * D - A * E);
 
-
-
         Log.e("xxxxxxxxxxxxx", String.valueOf(x));
         Log.e("yyyyyyyyyyyyx", String.valueOf(y));
-
-
-
-
 
 //            #Checksum on results
 //#if y > max(y1, y2, y3) or y <min(y1, y2, y3) or x >max(x1, x2, x3) or x <min(x1, x2, x3):
