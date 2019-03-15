@@ -208,7 +208,6 @@ void go()
                             Log.d("mmmm", "Value is: " + value);
                             value1 = value;
                             //    trilateration(new int[]{10, 20, 30}, new int[]{rss, value, 0});
-
                         }
 
                         @Override
@@ -242,62 +241,14 @@ void go()
             }, 2000);
         }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
+    //Compass
 
     private void scanWifiList() {
         WifiManager wifiManager = (WifiManager) getApplicationContext().getSystemService(getApplicationContext().WIFI_SERVICE);
         if (wifiManager.isWifiEnabled())
         {
             final WifiInfo wifiInfo=wifiManager.getConnectionInfo();
-
-
             new Handler().postDelayed(new Runnable() {
 
                 /*
@@ -311,7 +262,7 @@ void go()
                     // Start your app main activity
 
                     tt=findViewById(R.id.textView3);
-//                    Toast.makeText(getApplicationContext(),wifiInfo.getRssi()+"a",Toast.LENGTH_SHORT).show();
+                  //Toast.makeText(getApplicationContext(),wifiInfo.getRssi()+"a",Toast.LENGTH_SHORT).show();
 
                     if ((Math.abs(wifiInfo.getRssi())<40)&&(Math.abs(wifiInfo.getRssi())>5))
                     {
