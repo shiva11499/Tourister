@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     FirebaseDatabase database ;
 
     DatabaseReference myRef,myRef1 ;
-            int value1,value2;
+    int value1,value2;
 
     @Override
 
@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
         SharedPreferences prefs = getSharedPreferences("no",MODE_PRIVATE);
         String restoredText = prefs.getString("no", null);
-if (restoredText==null) {
+    if (restoredText==null) {
     LayoutInflater inflater = getLayoutInflater();
     View alertLayout = inflater.inflate(R.layout.name, null);
 
@@ -93,8 +93,8 @@ if (restoredText==null) {
     
     AlertDialog dialog = alert.create();
     dialog.show();
-}
-else
+    }
+    else
 {
     scanWifiList();
 }
@@ -107,9 +107,7 @@ else
         sound = MediaPlayer.create(this,R.raw.subsite1);
         Button addon = (Button) findViewById(R.id.addon);
 
-
         start();
-
         scanWifiList();
 
         addon.setOnClickListener(new View.OnClickListener() {
@@ -166,7 +164,6 @@ void go()
 
     AlertDialog dialog = alert.create();
     dialog.show();
-
 }
 
     private void scanWifiList1() {
