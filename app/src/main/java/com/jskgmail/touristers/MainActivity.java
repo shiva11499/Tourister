@@ -335,7 +335,6 @@ cc=1;
         if(mAzimuth <350 && mAzimuth > 280 ) {
         }
     }
-
     @Override
     public void onAccuracyChanged(Sensor sensor, int i) {
     }
