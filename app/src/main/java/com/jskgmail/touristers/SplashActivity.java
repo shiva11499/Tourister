@@ -33,6 +33,7 @@ public class SplashActivity extends AppCompatActivity {
                 rotateLoading.stop();
 
                 // close this activity
+                
                 finish();
             }
         }, 2000);
