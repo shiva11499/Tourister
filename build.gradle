@@ -24,12 +24,11 @@ allprojects {
             url 'https://maven.google.com/'
             name 'Google'
         }
-
         jcenter()
     }
 }
 
 task clean(type: Delete) {
     delete rootProject.buildDir
-    
+   
 }
