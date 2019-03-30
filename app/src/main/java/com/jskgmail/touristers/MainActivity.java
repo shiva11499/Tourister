@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     MediaPlayer sound = null;
     MediaPlayer sound1 = null;
 
-    FirebaseDatabase database ;
+    private FirebaseDatabase database ;
 
     DatabaseReference myRef,myRef1 ;
     int value1,value2;
